@@ -168,10 +168,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service
 
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
@@ -278,6 +274,14 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
+
+# ParanoidDoze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.sensor.proximity=true \
+    ro.sensor.pickup=android.sensor.tilt_detector
 
 # Perf
 PRODUCT_COPY_FILES += \
