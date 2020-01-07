@@ -168,10 +168,6 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     debug.sf.latch_unsignaled=1 \
     persist.demo.hdmirotationlock=false
 
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # DPM
 PRODUCT_PACKAGES += \
     libcutils_shim
@@ -373,6 +369,14 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh
+
+# ParanoidDoze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.sensor.proximity=true \
+    ro.sensor.pickup=android.sensor.tilt_detector
 
 # Recovery
 PRODUCT_PACKAGES += \
