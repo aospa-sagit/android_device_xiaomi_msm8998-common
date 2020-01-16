@@ -433,10 +433,6 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor_32 \
     libstdc++.vendor
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # Wifi
 PRODUCT_PACKAGES += \
     ipacm \
