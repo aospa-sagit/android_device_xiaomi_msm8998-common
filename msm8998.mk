@@ -189,6 +189,10 @@ PRODUCT_PACKAGES += \
 # Extra
 $(call inherit-product-if-exists, vendor/extra/extra.mk)
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi
