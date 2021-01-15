@@ -14,21 +14,20 @@
      limitations under the License.
 -->
 
-<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
-    <androidx.preference.PreferenceCategory
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
         android:key="display"
         android:title="@string/display_title">
 
-        <androidx.preference.Preference
+        <Preference
             android:fragment="org.omnirom.device.DisplayCalibration"
             android:icon="@drawable/ic_kcal"
             android:key="kcal"
             android:summary="@string/kcal_summary"
             android:title="@string/kcal_title" />
+    </PreferenceCategory>
 
-    </androidx.preference.PreferenceCategory>
-
-    <androidx.preference.PreferenceCategory android:title="@string/s2s_title">
+    <PreferenceCategory android:title="@string/s2s_title">
 
         <org.omnirom.device.Preference.SweepToSleepPreference
             android:defaultValue="0"
@@ -40,16 +39,16 @@
             android:title="@string/s2s_title_head" />
 
         <org.omnirom.device.Preference.S2SVibratorStrengthPreference
+            android:defaultValue="20"
+            android:dependency="sweep2sleep"
             android:icon="@drawable/ic_vibrate"
             android:key="s2s_vib_strength"
-            android:title="@string/s2s_vib_strength_title_head"
-            android:dependency="sweep2sleep"
             android:max="90"
             android:min="0"
-            android:defaultValue="20"/>
-    </androidx.preference.PreferenceCategory>
+            android:title="@string/s2s_vib_strength_title_head" />
+    </PreferenceCategory>
 
-    <androidx.preference.PreferenceCategory
+    <PreferenceCategory
         android:key="hw_buttons"
         android:title="@string/hw_buttons_title">
 
@@ -69,9 +68,9 @@
             android:max="255"
             android:min="0"
             android:defaultValue="255"/>
-    </androidx.preference.PreferenceCategory>
+    </PreferenceCategory>
 
-    <androidx.preference.PreferenceCategory
+    <PreferenceCategory
         android:key="usb_fastcharge"
         android:title="@string/usb_fastcharge_title">
 
@@ -81,6 +80,6 @@
             android:key="fastcharge"
             android:summary="@string/fastcharge_summary"
             android:title="@string/fastcharge_title" />
-    </androidx.preference.PreferenceCategory>
+    </PreferenceCategory>
 
-</androidx.preference.PreferenceScreen>
+</PreferenceScreen>
