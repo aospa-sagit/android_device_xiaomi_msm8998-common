@@ -301,55 +301,65 @@ vendor/lib64/liblbs_core.so
 vendor/lib64/libloc_api_v02.so
 vendor/lib64/libloc_ds_api.so
 
-# Graphics
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libQTapGLES.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/hw/vulkan.msm8998.so
-vendor/lib/libC2D2.so
-vendor/lib/libCB.so
-vendor/lib/libOpenCL.so
-vendor/lib/libRSDriver_adreno.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libbccQTI.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/librs_adreno.so
-vendor/lib/librs_adreno_sha1.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libQTapGLES.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/hw/vulkan.msm8998.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libRSDriver_adreno.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libbccQTI.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/librs_adreno.so
-vendor/lib64/librs_adreno_sha1.so
+# Graphics - from LA.UM.8.2.r1-07500-sdm660.0
+vendor/lib/egl/eglSubDriverAndroid.so|e72aefcf9fa50a01f53558ea7886e2d70b3a57a9
+vendor/lib/egl/libEGL_adreno.so|4ee0c196818b5f460853f0fdea1e7c586b889c88
+vendor/lib/egl/libGLESv1_CM_adreno.so|35180cd115c1d9dcc7ed33a4add281a365d8ec9c
+vendor/lib/egl/libGLESv2_adreno.so|e2ec3b74a1b6affe2f78cd5477dc30285c59c024
+vendor/lib/egl/libq3dtools_adreno.so|5d25d3f8d5f5e86f6d1b83df3a15561ff257756d
+vendor/lib/egl/libq3dtools_esx.so|35ba313e7e00d40dbf0bde82a335a6f257f67a07
+vendor/lib/egl/libQTapGLES.so|62647fc17de97ffeac871a4603134b5cc659a34d
+vendor/lib/hw/vulkan.sdm660.so:vendor/lib/hw/vulkan.msm8998.so|704d421e098d832de8049315df8951202a8bcf26
+vendor/lib/libadreno_utils.so|54eedfc81c3228ade708c4ebc8dd0cc25fcd46cf
+vendor/lib/libbccQTI.so|0be327b62b993d09953fc0758fbf19672d58d3ec
+vendor/lib/libc2d30_bltlib.so|3ff9baf59a1e1c56b91a0f509a2dfd36c9e96be2
+vendor/lib/libC2D2.so|c189d8794a261824b8fdeca4e65d63eb92c0cc0a
+vendor/lib/libCB.so|e12a67e70bce0ba44143e424b53fc6d1a490bbf2
+vendor/lib/libgsl.so|aaa872a82464283f742838908c7fd5e0ac9a74f7
+vendor/lib/libllvm-glnext.so|017017256eda565d7c2fa1b8f2b0f5e720ddb321
+vendor/lib/libllvm-qcom.so|c7af1844b19258ad6eb822fa56d0ce5fd3df232b
+vendor/lib/libOpenCL.so|6fe1ec3442653efedf49f64aa9301e0ed91abac0
+vendor/lib64/egl/eglSubDriverAndroid.so|2f5f0f8dff2e5a52f5852a9dcdb844d348b934bc
+vendor/lib64/egl/libEGL_adreno.so|881af356ca2f30d993fd2a859d1ad93a704a754f
+vendor/lib64/egl/libGLESv1_CM_adreno.so|ee3604131af93e38baaf0cdff49523514cd1f1b2
+vendor/lib64/egl/libGLESv2_adreno.so|287c61e516666690a4c6b62bcf43c021959e5ecc
+vendor/lib64/egl/libq3dtools_adreno.so|07c3b406aa055abfdb3358833d02cb5133964d37
+vendor/lib64/egl/libq3dtools_esx.so|65a22fbfb7f471cd159290c4a7cc755f1a772c6c
+vendor/lib64/egl/libQTapGLES.so|8a82cd42126f848b0fa2470dbcdcbe02585627a3
+vendor/lib64/hw/vulkan.sdm660.so:vendor/lib64/hw/vulkan.msm8998.so|5616c7938c8d80fd1f1ca4c80ea20b1497246c3f
+vendor/lib64/libadreno_utils.so|7723561e4c15c8cda5639ab36c0fb80cefbad783
+vendor/lib64/libbccQTI.so|42fdea81ea505ccadbf6d24af7ba37cf83760391
+vendor/lib64/libc2d30_bltlib.so|efda0093baa46c8138ac98f29d417e0b72125e24
+vendor/lib64/libC2D2.so|802802ac7ce0bb8bfc6918449a89ec820c6cfd53
+vendor/lib64/libCB.so|388b66175c59113fddcded9875c3ceec4923b302
+vendor/lib64/libgsl.so|38b4efad2d4dc610b55cc3c7d7f0d99e79eba52e
+vendor/lib64/libllvm-glnext.so|3a4a045ea85877e814a9954ced7ec6baa8e04210
+vendor/lib64/libllvm-qcom.so|f405f07c443129f0a82c87b528d690e26afcbe4e
+vendor/lib64/libOpenCL.so|d6bb350254707592d6f6360c06d4c3336f8f1155
 
-# Graphics (SDM) - from DRG - QKQ1.190828.002
--vendor/lib/libsdm-disp-vndapis.so|15a98ef885dbd29935b1107d7a2988ae495abb87
-vendor/lib64/libqseed3.so|24ae4dfe5d9fa27a858b64dfafd1c713da6e6fde
-vendor/lib64/libsdm-color.so|ed022cfcc1546c11b82991986e0a938464400858
-vendor/lib64/libsdm-diag.so|6eb99b83036f917070393fa067eaebc50a5ff307
--vendor/lib64/libsdm-disp-vndapis.so|ba4978c373f9892d884d07c4cf25dba9d73fda1f
-vendor/lib64/libsdmextension.so|264c00a0920d291700b2948b9337037684986921
-vendor/lib64/libtinyxml2_1.so|ba981e332895a053a67fc54a8190365a3ad37f2d
+# Graphics (DRM) - from LA.UM.8.2.r1-07500-sdm660.0
+vendor/lib/libsdedrm.so|c8e069bb766dbb5a7c1e1419e22d69197e378609
+vendor/lib64/libsdedrm.so|35060b2f7f93b1b3ab3b190e4365d135b9c2fd44
+
+# Graphics (HDR) - from LA.UM.8.2.r1-07500-sdm660.0
+vendor/lib/libhdr_tm.so|0104cdb2789ab1fb54b6b93564300f13ffeefc39
+vendor/lib64/libhdr_tm.so|0744584d9e30a921898695c89e96293901437c08
+
+# Graphics (SDM) - from LA.UM.8.2.r1-07500-sdm660.0
+vendor/lib/libqseed3.so|44f99b99b831227491e320a3098c8defe8df0781
+vendor/lib/libsdm-color.so|05e6eedb8f9656d9097a1c3cee09ceeef1025181
+vendor/lib/libsdm-diag.so|f560622d31fa58c6b3ee2843d7485ddfd246d064
+-vendor/lib/libsdm-disp-vndapis.so|bad84544313a5bdf5d0171e685c493dbe1fd72d4
+vendor/lib/libsdmextension.so|ebc3f1aed53d208ccc665a173198adb9e0ed6a79
+vendor/lib/libtinyxml.so|b0ee6ef611affa84a08d6f162b499ff374570aee
+vendor/lib/libtinyxml2_1.so|89e1b1af10209dbb8d341cd314750cc64fc33852
+vendor/lib64/libqseed3.so|6779aaf96283e244122f4cc76cd3cb750ff14ed5
+vendor/lib64/libsdm-color.so|9c80ac4e059bff1c53814e9f5f71a5fbe38bce40
+vendor/lib64/libsdm-diag.so|35206a3a9b7ed56317511bb72f89fd380d848ca6
+-vendor/lib64/libsdm-disp-vndapis.so|a4e271a373b83b1e04afdbff63ab37154aead5f9
+vendor/lib64/libsdmextension.so|913503f002aa2afbeca90d429bac4bff4a2266e0
+vendor/lib64/libtinyxml.so|6b469580f781995a2e78fe1b5c19930040a8798e
+vendor/lib64/libtinyxml2_1.so|70942325afdd14eedcf11b3fbbfbc3d98f42f8dc
 
 # Graphics firmware
 vendor/firmware/a530_pfp.fw
