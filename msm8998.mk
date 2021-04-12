@@ -355,8 +355,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.radio.atfwd.start=true \
-    persist.vendor.radio.mt_sms_ack=30 \
-    ro.telephony.iwlan_operation_mode=legacy
+    persist.vendor.radio.mt_sms_ack=30
 
 PRODUCT_ODM_PROPERTIES += \
     persist.vendor.radio.enableadvancedscan=false \
