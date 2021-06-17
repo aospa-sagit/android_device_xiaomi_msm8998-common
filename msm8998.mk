@@ -170,6 +170,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
 
 PRODUCT_VENDOR_PROPERTIES += \
+    persist.sys.sf.native_mode=2 \
     vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=0 \
     vendor.gralloc.enable_fb_ubwc=1
