@@ -341,6 +341,7 @@ PRODUCT_PACKAGES += \
     init.msm8998.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
+    init.xiaomi.display.rc \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
