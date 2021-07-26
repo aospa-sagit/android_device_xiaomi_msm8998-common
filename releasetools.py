@@ -1,5 +1,6 @@
 # Copyright (C) 2009 The Android Open Source Project
 # Copyright (c) 2011, The Linux Foundation. All rights reserved.
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,29 +14,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import hashlib
 import common
 import re
 
-def FullOTA_Assertions(info):
-  AddTrustZoneAssertion(info, info.input_zip)
+def FullOTA_InstallBegin(info):
+  input_zip = info.input_zip
+  AddImage(info, "RADIO", input_zip, "super_dummy.img", "/tmp/super_dummy.img");
+  info.script.AppendExtra('package_extract_file("install/bin/flash_super_dummy.sh", "/tmp/flash_super_dummy.sh");')
+  info.script.AppendExtra('set_metadata("/tmp/flash_super_dummy.sh", "uid", 0, "gid", 0, "mode", 0755);')
+  info.script.AppendExtra('run_program("/tmp/flash_super_dummy.sh");')
   return
 
-def IncrementalOTA_Assertions(info):
-  AddTrustZoneAssertion(info, info.target_zip)
-  return
+def AddImage(info, dir, input_zip, basename, dest):
+  path = dir + "/" + basename
+  if path not in input_zip.namelist():
+    return
 
-def AddTrustZoneAssertion(info, input_zip):
-  android_info = info.input_zip.read("OTA/android-info.txt").decode('UTF-8')
-  t = re.search(r'require\s+version-trustzone\s*=\s*(\S+)', android_info)
-  f = re.search(r'require\s+version-firmware\s*=\s*(.+)', android_info)
-  if t and f:
-    versions_trustzone = t.group(1).split('|')
-    version_firmware = f.group(1).rstrip()
-    if ((len(versions_trustzone) and '*' not in versions_trustzone) and \
-    (len(version_firmware) and '*' not in version_firmware)):
-      cmd = 'assert(xiaomi.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions_trustzone]) + ') == "1" || \
-abort("Error: This package requires MIUI firmware version ' + version_firmware + \
-' or newer. Please upgrade firmware and retry!"););'
-      info.script.AppendExtra(cmd)
-  return
+  data = input_zip.read(path)
+  common.ZipWriteStr(info.output_zip, basename, data)
+  info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
+  info.script.AppendExtra('package_extract_file("%s", "%s");' % (basename, dest))
