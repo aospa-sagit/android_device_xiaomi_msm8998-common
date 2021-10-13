@@ -156,6 +156,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
 # Display
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
+
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=0 \
