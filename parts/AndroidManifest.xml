@@ -28,7 +28,7 @@
         <activity-alias
             android:name=".DeviceSettings"
             android:enabled="true"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/advanced_settings"
             android:targetActivity=".DeviceSettingsActivity"
             android:theme="@style/Theme.SubSettingsBase">
@@ -51,7 +51,9 @@
         <activity
             android:name=".DisplayCalibrationActivity"
             android:exported="false" />
-        <receiver android:name=".Startup">
+        <receiver
+            android:name=".Startup"
+            android:exported="false">
             <intent-filter android:priority="100">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
