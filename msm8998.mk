@@ -115,7 +115,7 @@ PRODUCT_ODM_PROPERTIES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.0-impl
+    android.hardware.bluetooth.audio-impl
     
 PRODUCT_VENDOR_PROPERTIES += \
     persist.bluetooth.a2dp_offload.disabled=false \
