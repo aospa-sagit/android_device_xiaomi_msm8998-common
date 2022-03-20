@@ -387,14 +387,44 @@ vendor/lib64/hw/keystore.msm8998.so
 vendor/lib/hw/sound_trigger.primary.msm8998.so
 vendor/lib/libsmwrapper.so
 
-# Media
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxVpp.so
-vendor/lib/libgpustats.so
-vendor/lib/libvpphvx.so
-vendor/lib/libvpplibrary.so
-vendor/lib/libvqzip.so
-vendor/lib64/libgpustats.so
+# Media - from LA.UM.10.2.1.r1-03400-sdm660.0
+lib/libFileMux.so|22005fb1595b2b76e199b82ff3790c1bc3d54a20
+lib/libOmxMux.so|66ccc804301bccfbd17afb39a60131dd1a3fa9bc
+lib64/libFileMux.so|8b31ad6706780a8e5225817d8bf8b683ba1523c5
+lib64/libOmxMux.so|3c2fef1fc174bd93ebdc4cbeca9c4acc3731222e
+vendor/lib/libAlacSwDec.so|3a6d7dae2808dbe111ff4449b4e1e82560466ef3
+vendor/lib/libApeSwDec.so|ff14ad2ebbabcd89278830d817e9aa6bdcb1799a
+vendor/lib/libFlacSwDec.so|707dbc6b5d2890dc3bba22c00b372f0973baebda
+vendor/lib/libOmxAacDec.so|59bca3949a893cc9b70ac432b87b4c656fffa4dd
+vendor/lib/libOmxAlacDec.so|b1c4795012458fc5a569be5e930ceb5603c0c88c
+vendor/lib/libOmxAlacDecSw.so|ff4b38dbead17dcd0c9a045f109fa4e92ca2992a
+vendor/lib/libOmxAmrDec.so|cf8cf5f1664cea77c48db08785d3191958b772be
+vendor/lib/libOmxAmrwbplusDec.so|8a282320d05d05eac09fabcd69209bce80540ebf
+vendor/lib/libOmxApeDec.so|9f10c570f456b65b2b2dfcce3fe0f6fc35196d48
+vendor/lib/libOmxApeDecSw.so|1014274fe2ad40b361a3adecae258161287500dc
+vendor/lib/libOmxDsdDec.so|d265762dfc714d51379a27970b05f325dbe412da
+vendor/lib/libOmxEvrcDec.so|28b401779d9ee45b0e94415faf9ac34c6fd200f0
+vendor/lib/libOmxG711Dec.so|c952f9d05cf465f622aa00f9640f616c3f2a2a40
+vendor/lib/libOmxQcelp13Dec.so|ee6ede27923f04f4bb03b101bbf302e4df782945
+vendor/lib/libOmxVideoDSMode.so|84c632ef31c4dd88c5e08f92ba02e3f29df09b35
+vendor/lib/libOmxWmaDec.so|a664af6f1be984747ce5101881696e126ca3e098
+vendor/lib/libdsd2pcm.so|f9d2f26315764c27137bc375bb85b20fabe66ff9
+vendor/lib/libmmosal.so|9309b491b033caa895a45bf769ed5af59adf1a2b
+vendor/lib64/libAlacSwDec.so|9fbfad65ffca33e1ac480e9cb056467ac75a6d5a
+vendor/lib64/libApeSwDec.so|76d3cc02ca1c3cdc3c71e57dc6e53027d2bf3d37
+vendor/lib64/libFlacSwDec.so|002aa39927e75568efb81c7ae3a044c694babfc3
+vendor/lib64/libOmxAacDec.so|f17b7e219fffda2069371222792b560619878816
+vendor/lib64/libOmxAlacDec.so|828edcaa01f477359a9a6daf0cea6d5cb74f6db1
+vendor/lib64/libOmxAlacDecSw.so|159ea5d27936611107adf7355db760819bded68f
+vendor/lib64/libOmxAmrDec.so|33b1a5d9dc68cd3cf71fe7895c0b637574358201
+vendor/lib64/libOmxAmrwbplusDec.so|2afc34c8f03890d4081f015b0dfdfd8cf5d302b8
+vendor/lib64/libOmxApeDec.so|cdcb7d31c8b15d3d6aa983bcd614dd79a41e71fd
+vendor/lib64/libOmxApeDecSw.so|1536b0c27fd161e845f6615f73792fa66cf7027e
+vendor/lib64/libOmxEvrcDec.so|8a27c85dd54f269a9ba6b41f3a1c1b63e9ae2ea9
+vendor/lib64/libOmxG711Dec.so|e47603c64b97947edc80d4acfb0ef2845d2435e8
+vendor/lib64/libOmxQcelp13Dec.so|5a8e892912cd56c74b72420ea4fea62918bf260e
+vendor/lib64/libOmxWmaDec.so|12f994f034be6249acf8f25306bce4a38405e099
+vendor/lib64/libmmosal.so|fc4fdcc1f8d2fd75c95da4691c9511975f3b5bf3
 
 # Mlipay
 vendor/bin/mlipayd@1.1
