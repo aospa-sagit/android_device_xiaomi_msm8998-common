@@ -297,7 +297,32 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     onrestart restart audioserver
-    
+
+service vendor.ppd /vendor/bin/mm-pp-dpps
+    class late_start
+    user system
+    group system graphics
+    socket pps stream 0660 system system
+    disabled
+
+on property:init.svc.surfaceflinger=stopped
+    stop vendor.ppd
+
+on property:init.svc.surfaceflinger=running
+    start vendor.ppd
+
+on property:init.svc.surfaceflinger=restarting
+    stop vendor.ppd
+
+on property:init.svc.zygote=stopped
+    stop vendor.ppd
+
+on property:init.svc.zygote=running
+    start vendor.ppd
+
+on property:init.svc.zygote=restarting
+    stop vendor.ppd
+
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     class core
     user vendor_qrtr
