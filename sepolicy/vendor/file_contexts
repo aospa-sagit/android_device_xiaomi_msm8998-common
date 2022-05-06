@@ -22,6 +22,11 @@
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd@1.1                       u:object_r:hal_mlipay_default_exec:s0
 
+# Perf component
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.memory\.pasrmanager\@1\.0-service u:object_r:hal_pasrmanager_memory_qti_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.psiclient\@1\.0-service u:object_r:hal_psiservice_exec:s0
+/(vendor|system/vendor)/bin/vendor\.qti\.qspmhal@1\.0-service u:object_r:hal_qspmhal_default_exec:s0
+
 # Root extra symlink
 /persist                                                      u:object_r:mnt_vendor_file:s0
 
