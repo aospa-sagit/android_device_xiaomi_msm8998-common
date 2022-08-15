@@ -177,6 +177,9 @@ on boot
     # Create directory used for display
     mkdir /persist/display 0770 system graphics
 
+    # default country code
+    setprop ro.boot.wificountrycode 00
+
     start vendor.qcrild
     start vendor.qcrild2
 
