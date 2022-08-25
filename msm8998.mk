@@ -109,7 +109,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_ODM_PROPERTIES += \
     persist.vendor.audio.fluence.voicerec=true \
     ro.vendor.audio.sdk.fluencetype=fluencepro
 
