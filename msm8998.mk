@@ -184,10 +184,6 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     debug.sf.latch_unsignaled=1 \
     persist.demo.hdmirotationlock=false
 
-# DPM
-PRODUCT_PACKAGES += \
-    libcutils_shim
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
