@@ -26,4 +26,8 @@ cc_binary {
         "libutils",
         "android.hardware.light@2.0",
     ],
+    overrides: [
+        "android.hardware.light@2.0-service",
+        "android.hardware.lights-service.qti",
+    ],
 }
