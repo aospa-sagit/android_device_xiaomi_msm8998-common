@@ -160,13 +160,6 @@ PRODUCT_PACKAGES += \
     libpiex_shim \
     vendor.qti.hardware.camera.device@1.0:64
 
-# Codec2 modules
-PRODUCT_PACKAGES += \
-    com.android.media.swcodec \
-    libsfplugin_ccodec \
-    android.hardware.media.c2@1.0.vendor \
-    android.hardware.media.c2@1.1.vendor
-
 # Control groups and task profiles
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
@@ -286,7 +279,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
     mediametrics \
     libmediametrics \
     libregistermsext \
