@@ -321,7 +321,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.fingerprint.rc \
     init.qcom.rc \
-    init.qcom.usb.rc \
+    init.msm8998.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
