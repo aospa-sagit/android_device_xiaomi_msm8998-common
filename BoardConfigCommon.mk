@@ -49,9 +49,6 @@ BOARD_KERNEL_CMDLINE += service_locator.enable=1
 BOARD_KERNEL_CMDLINE += swiotlb=2048
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 
-# Platform
-TARGET_BOARD_PLATFORM := msm8998
-
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
@@ -73,9 +70,6 @@ TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
-
-# Filesystem
-TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/config.fs
 
 # GPS
 USE_DEVICE_SPECIFIC_GPS := true
@@ -103,14 +97,12 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 TARGET_USES_INTERACTION_BOOST := true
+TARGET_USES_NON_LEGACY_POWERHAL := true
 
 # Properties
 TARGET_PRODUCT_PROP += $(PLATFORM_PATH)/product.prop
 TARGET_SYSTEM_EXT_PROP += $(PLATFORM_PATH)/system_ext.prop
 TARGET_VENDOR_PROP += $(PLATFORM_PATH)/vendor.prop
-
-# QCOM
-BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
