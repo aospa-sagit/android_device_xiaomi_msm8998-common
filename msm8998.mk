@@ -361,6 +361,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# QTI common
+TARGET_COMMON_QTI_COMPONENTS := \
+    vibrator
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
@@ -423,10 +427,6 @@ PRODUCT_COPY_FILES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
 
 # VNDK
 PRODUCT_PACKAGES += \
