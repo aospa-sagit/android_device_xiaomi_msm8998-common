@@ -19,6 +19,8 @@ ro.config.vc_call_vol_steps=11
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
 vendor.audio.adm.buffering.ms=6
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.feature.a2dp_offload.enable=false
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.anc_headset.enable=true
@@ -90,12 +92,6 @@ persist.vendor.cne.feature=1
 
 # Dalvik
 dalvik.vm.systemuicompilerfilter=speed
-
-# Dolby
-persist.vendor.audio_fx.current=dolby
-vendor.audio.dolby.ds2.enabled=true
-vendor.audio.dolby.ds2.hardbypass=true
-ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
 
 # FRP
 ro.frp.pst=/dev/block/platform/soc/1da4000.ufshc/by-name/frp
