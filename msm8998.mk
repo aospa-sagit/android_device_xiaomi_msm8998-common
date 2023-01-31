@@ -161,6 +161,13 @@ PRODUCT_PACKAGES += \
     libpiex_shim \
     vendor.qti.hardware.camera.device@1.0:64
 
+# Codec2 modules
+PRODUCT_PACKAGES += \
+    com.android.media.swcodec \
+    libsfplugin_ccodec \
+    android.hardware.media.c2@1.0.vendor \
+    android.hardware.media.c2@1.1.vendor
+
 # Control groups and task profiles
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
@@ -283,19 +290,27 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.xiaomi_msm8998
 
 # Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-impl \
+    mediametrics \
+    libmediametrics \
+    libregistermsext \
+    libstagefright_enc_common \
+    libavmediaserviceextensions
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.omx_default_rank=0
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    media.stagefright.thumbnail.prefer_hw_codecs=true
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
-    $(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
-
-PRODUCT_COPY_FILES += \
-    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
-
-# Media Extensions
-PRODUCT_PACKAGES += \
-    libavservices_minijail.vendor
+    $(LOCAL_PATH)/configs/media/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor.xml \
+    $(LOCAL_PATH)/configs/media/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
+    $(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
+    $(LOCAL_PATH)/configs/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
 # Mlipay
 PRODUCT_PACKAGES += \
@@ -326,11 +341,13 @@ PRODUCT_COPY_FILES += \
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
+    libhypv_intercept \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
     libOmxEvrcEnc \
+    libOmxG711Enc \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
@@ -363,6 +380,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
     display \
+    media-legacy \
     vibrator
 
 # Ramdisk
