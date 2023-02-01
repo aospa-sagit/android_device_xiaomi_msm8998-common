@@ -431,6 +431,14 @@ vendor/bin/mlipayd@1.1
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 vendor/lib64/libmlipay@1.1.so
 
+# NFC
+vendor/bin/hw/android.hardware.nfc@1.1-service
+vendor/etc/init/android.hardware.nfc@1.1-service.rc
+vendor/lib64/ese_spi_nxp.so
+vendor/lib64/nfc_nci_nxp.so
+vendor/lib64/vendor.nxp.nxpese@1.0.so
+vendor/lib64/vendor.nxp.nxpnfc@1.0.so
+
 # NFC firmware
 vendor/lib/libpn553_fw.so
 
