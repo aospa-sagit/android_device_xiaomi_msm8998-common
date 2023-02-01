@@ -96,6 +96,9 @@ function blob_fixup() {
         vendor/lib/libarcsoft_beauty_shot.so)
             "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
             ;;
+        vendor/lib/libmmcamera_ppeiscore.so)
+            "${PATCHELF}" --remove-needed "libgui.so" "${2}"
+            ;;
         vendor/lib/libmmcamera2_sensor_modules.so)
             sed -i 's|/data/misc/camera/camera_lsc_caldata.txt|/data/vendor/camera/camera_lsc_calib.txt|g' "${2}"
             ;;
