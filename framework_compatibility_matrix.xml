@@ -112,6 +112,14 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.display.postproc</name>
+        <version>1.0</version>
+        <interface>
+            <name>IDisplayPostproc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.goodix.hardware.fingerprintextension</name>
         <version>1.0</version>
         <interface>
