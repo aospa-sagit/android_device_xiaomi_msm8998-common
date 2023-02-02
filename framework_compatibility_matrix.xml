@@ -81,6 +81,14 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.display.color</name>
+        <version>1.0</version>
+        <interface>
+            <name>IDisplayColor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.display.config</name>
         <version>1.0-1</version>
         <interface>
