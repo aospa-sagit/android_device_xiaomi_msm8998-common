@@ -240,6 +240,14 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.servicetracker</name>
+        <version>1.0-2</version>
+        <interface>
+            <name>IServicetracker</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.soter</name>
         <version>1.0</version>
         <interface>
@@ -268,6 +276,14 @@
         <interface>
             <name>IRTPService</name>
             <instance>imsrtpservice</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.memory.pasrmanager</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IPasrManager</name>
+            <instance>pasrhal</instance>
         </interface>
     </hal>
     <hal format="hidl">
