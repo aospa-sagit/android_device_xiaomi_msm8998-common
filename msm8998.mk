@@ -343,8 +343,7 @@ TARGET_BOARD_PLATFORM := msm8998
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service \
-    vendor.qti.hardware.perf@1.0.vendor
+    android.hardware.power-service
 
 # Protobuf
 PRODUCT_PACKAGES += \
@@ -366,6 +365,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     display \
     media \
+    perf \
     vibrator
 
 # Ramdisk
