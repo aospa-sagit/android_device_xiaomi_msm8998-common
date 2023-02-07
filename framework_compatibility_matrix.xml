@@ -1,7 +1,7 @@
 <compatibility-matrix version="2.0" type="framework">
     <hal format="hidl">
         <name>android.hardware.radio</name>
-        <version>1.0-1</version>
+        <version>1.0-2</version>
         <interface>
             <name>ISap</name>
             <instance>slot2</instance>
@@ -179,7 +179,7 @@
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.ims</name>
-        <version>1.0-5</version>
+        <version>1.0-6</version>
         <interface>
             <name>IImsRadio</name>
             <instance>imsradio0</instance>
@@ -188,7 +188,7 @@
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.lpa</name>
-        <version>1.0</version>
+        <version>1.0-1</version>
         <interface>
             <name>IUimLpa</name>
             <instance>UimLpa0</instance>
@@ -205,7 +205,8 @@
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qtiradio</name>
-        <version>2.0-3</version>
+        <version>1.0</version>
+        <version>2.0-4</version>
         <interface>
             <name>IQtiRadio</name>
             <instance>slot1</instance>
