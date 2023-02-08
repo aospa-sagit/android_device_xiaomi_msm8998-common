@@ -26,10 +26,6 @@ ro.boot.fpsensor                                              u:object_r:vendor_
 # Mlipay
 persist.vendor.sys.pay.ifaa                                   u:object_r:vendor_tee_listener_prop:s0
 
-# Pasr
-vendor.pasr.                                                  u:object_r:vendor_pasr_prop:s0
-ro.vendor.pasr.                                               u:object_r:vendor_pasr_prop:s0
-
 # Radio
 persist.sys.labtest_flag                                      u:object_r:telephony_status_prop:s0
 ro.build.software.version                                     u:object_r:vendor_qcom_ims_prop:s0
