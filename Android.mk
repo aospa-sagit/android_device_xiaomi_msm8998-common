@@ -20,6 +20,20 @@ ifneq ($(filter sagit chiron,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
+LPFLASH := $(HOST_OUT_EXECUTABLES)/lpflash$(HOST_EXECUTABLE_SUFFIX)
+INSTALLED_SUPERIMAGE_DUMMY_TARGET := $(PRODUCT_OUT)/super_dummy.img
+
+$(INSTALLED_SUPERIMAGE_DUMMY_TARGET): $(PRODUCT_OUT)/super_empty.img $(LPFLASH)
+	$(call pretty,"Target dummy super image: $@")
+	$(hide) touch $@
+	$(hide) echo $(CURDIR)
+	$(hide) $(LPFLASH) $(CURDIR)/$@ $(CURDIR)/$(PRODUCT_OUT)/super_empty.img
+
+.PHONY: super_dummyimage
+super_dummyimage: $(INSTALLED_SUPERIMAGE_DUMMY_TARGET)
+
+INSTALLED_RADIOIMAGE_TARGET += $(INSTALLED_SUPERIMAGE_DUMMY_TARGET)
+
 include $(CLEAR_VARS)
 
 RFS_MSM_ADSP_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/adsp/
