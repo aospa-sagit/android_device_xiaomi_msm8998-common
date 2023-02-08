@@ -69,7 +69,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="show_data_usage_toast" value="true"/>
         <boolean name="show_apn_setting_cdma_bool" value="true" />
         <!-- Config to enable video conference call support -->
-        <boolean name="support_video_conference_call_bool" value="true"/>
+        <boolean name="support_video_conference_call_bool" value="false"/>
         <!-- Config that controls whether to show static image related UI elements or not
              eg. static image option under IMS Settings, static image in preview window,
              hide me button in active call screen etc. -->
