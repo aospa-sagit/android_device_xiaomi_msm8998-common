@@ -408,6 +408,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
 
+# Time services
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.timed.enable=true
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
