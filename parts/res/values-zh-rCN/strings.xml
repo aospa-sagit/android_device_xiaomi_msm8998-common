@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">其他设置</string>
     <string name="advanced_settings">其他设置</string>
-    <string name="advanced_settings_summary">色彩校准、滑动休眠、米音</string>
+    <string name="advanced_settings_summary">色彩校准、按键设置、快速充电</string>
 
     <string name="display_title">显示</string>
     <string name="device_doze_title">环境显示</string>
