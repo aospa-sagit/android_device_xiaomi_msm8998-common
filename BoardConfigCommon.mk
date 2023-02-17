@@ -92,8 +92,8 @@ TARGET_USES_INTERACTION_BOOST := true
 TARGET_USES_NON_LEGACY_POWERHAL := true
 
 # Properties
-TARGET_PRODUCT_PROP += $(PLATFORM_PATH)/product.prop
-TARGET_VENDOR_PROP += $(PLATFORM_PATH)/vendor.prop
+TARGET_PRODUCT_PROP += $(PLATFORM_PATH)/configs/prop/product.prop
+TARGET_VENDOR_PROP += $(PLATFORM_PATH)/configs/prop/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
