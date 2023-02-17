@@ -292,6 +292,14 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# ParanoidDoze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.sensor.proximity=true \
+    ro.sensor.pickup=android.sensor.tilt_detector
+
 # Parts
 PRODUCT_PACKAGES += \
     XiaomiParts
@@ -340,14 +348,6 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh
-
-# ParanoidDoze
-PRODUCT_PACKAGES += \
-    ParanoidDoze
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.sensor.proximity=true \
-    ro.sensor.pickup=android.sensor.tilt_detector
 
 # Recovery
 PRODUCT_PACKAGES += \
