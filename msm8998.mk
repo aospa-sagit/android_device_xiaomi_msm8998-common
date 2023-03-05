@@ -184,7 +184,10 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
-    android.hardware.drm@1.1.vendor
+    android.hardware.drm@1.4.vendor
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    drm.service.enabled=true
 
 # Extra
 $(call inherit-product-if-exists, vendor/extra/extra.mk)
