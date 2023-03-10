@@ -86,11 +86,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist
 TARGET_COPY_OUT_VENDOR := vendor
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
-TARGET_USES_INTERACTION_BOOST := true
-TARGET_USES_NON_LEGACY_POWERHAL := true
-
 # Properties
 TARGET_PRODUCT_PROP += $(PLATFORM_PATH)/configs/prop/product.prop
 TARGET_VENDOR_PROP += $(PLATFORM_PATH)/configs/prop/vendor.prop
@@ -114,6 +109,9 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/private
 PRODUCT_PUBLIC_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/public
 SELINUX_IGNORE_NEVERALLOWS := true
+
+# Touch
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # Treble
 BOARD_VNDK_VERSION := current
