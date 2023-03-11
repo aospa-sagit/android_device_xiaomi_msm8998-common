@@ -315,10 +315,6 @@ PRODUCT_COPY_FILES += \
 # Platform
 TARGET_BOARD_PLATFORM := msm8998
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service
-
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
