@@ -87,9 +87,6 @@ persist.vendor.camera.HAL3.enabled=1
 persist.vendor.camera.set.afd=4
 vidc.enc.dcvs.extra-buff-count=2
 
-# Dalvik
-dalvik.vm.systemuicompilerfilter=speed
-
 # FRP
 ro.frp.pst=/dev/block/platform/soc/1da4000.ufshc/by-name/frp
 
