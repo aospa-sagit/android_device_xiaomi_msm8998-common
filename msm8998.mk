@@ -197,10 +197,6 @@ $(call inherit-product-if-exists, vendor/extra/extra.mk)
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi
 
-# fwk-detect
-PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect.vendor
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
