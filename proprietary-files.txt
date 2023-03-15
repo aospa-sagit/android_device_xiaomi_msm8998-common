@@ -470,10 +470,6 @@ vendor/lib64/libOmxQcelp13Dec.so|5a8e892912cd56c74b72420ea4fea62918bf260e
 vendor/lib64/libOmxWmaDec.so|12f994f034be6249acf8f25306bce4a38405e099
 vendor/lib64/libmmosal.so|fc4fdcc1f8d2fd75c95da4691c9511975f3b5bf3
 
-# Misc - from UL-ASUS_X01BD-WW-17.2018.2012.434-user
-system_ext/lib/libbeluga.so|476b76af5190f5a88b71e217a54513abd0a0580f
-system_ext/lib64/libbeluga.so|323cadc5067d5b4641286d584aa30ac3a24cedbb
-
 # Mlipay
 vendor/bin/mlipayd@1.1
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
