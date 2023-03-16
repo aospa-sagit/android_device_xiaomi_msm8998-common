@@ -345,6 +345,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# QTI common
+TARGET_COMMON_QTI_COMPONENTS := \
+    av
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
