@@ -62,6 +62,7 @@ BOARD_USES_ALSA_AUDIO := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_QCOM := true
+TARGET_USE_QTI_BT_STACK := false
 
 # Display
 TARGET_USES_GRALLOC1 := true
