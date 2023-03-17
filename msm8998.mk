@@ -350,7 +350,8 @@ PRODUCT_PACKAGES += \
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
     bt \
-    display
+    display \
+    perf
 
 # Ramdisk
 PRODUCT_PACKAGES += \
