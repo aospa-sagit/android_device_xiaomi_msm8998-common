@@ -31,6 +31,7 @@
 #include <stdlib.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
+#include <sys/stat.h>
 #include <sys/sysinfo.h>
 
 #include <android-base/properties.h>
@@ -81,8 +82,17 @@ void checkram_loadprops()
         load_4gb();
 }
 
+void apply_safety_net_hack() {
+    // SafetyNet
+    property_override("ro.oem_unlock_supported", "0");
+
+    // Hide permissive state
+    chmod("/sys/fs/selinux/enforce", 0640);
+    chmod("/sys/fs/selinux/policy", 0440);
+}
+
 void vendor_load_properties()
 {
-    property_override("ro.oem_unlock_supported", "0");
     checkram_loadprops();
+    apply_safety_net_hack();
 }
