@@ -1,4 +1,4 @@
-service vendor.wifi_hal_legacy /vendor/bin/hw/android.hardware.wifi@1.0-service
+service vendor.wifi_hal_legacy /vendor/bin/hw/android.hardware.wifi@1.0-service.xiaomi_msm8998
     interface android.hardware.wifi@1.0::IWifi default
     interface android.hardware.wifi@1.1::IWifi default
     interface android.hardware.wifi@1.2::IWifi default
