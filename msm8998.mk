@@ -302,6 +302,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # QTI common
 TARGET_COMMON_QTI_COMPONENTS := \
+    alarm \
     av \
     bt \
     telephony \
