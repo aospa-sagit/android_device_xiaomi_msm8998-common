@@ -261,16 +261,10 @@ PRODUCT_PACKAGES += \
     libandroid_net
 
 # NFC
-PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    Tag
-
-PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service
+TARGET_USES_NQ_NFC := false
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
-    $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/nfc/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -305,6 +299,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     alarm \
     av \
     bt \
+    nfc \
     telephony \
     vibrator
 
