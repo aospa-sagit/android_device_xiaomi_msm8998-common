@@ -1,5 +1,5 @@
 # HALs
-hal_attribute_lineage(mlipay)
+hal_attribute(mlipay)
 
 # Perf component
 attribute hal_qspmhal;
